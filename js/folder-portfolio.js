@@ -3,7 +3,7 @@
   const SPREAD = 'stacked';
   const TILT = 1;
   const OPEN_ON_LOAD = false;
-  const N = 5;
+  const N = 6;
 
   class FolderPortfolio {
     els = {};
@@ -29,6 +29,14 @@
 
       this.els.tab.addEventListener('click', this.tabClick);
       this.els.cover.addEventListener('pointerdown', this.coverDown);
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          alert('Thanks! Your message has been sent.');
+          contactForm.reset();
+        });
+      }
       for (let i = 0; i < N; i++) {
         this.els[i].addEventListener('pointerdown', (e) => this.onDown(i, e));
       }
@@ -168,7 +176,7 @@
 
     onDown(i, e) {
       if (!this.open) { this.setOpen(true); return; }
-      if (e.target && e.target.closest && e.target.closest('a')) return;
+      if (e.target && e.target.closest && e.target.closest('a, input, textarea, button, label')) return;
       e.preventDefault();
       const p = this.pos[i];
       this.drag = { i: i, sx: e.clientX, sy: e.clientY, ox: p.x, oy: p.y };

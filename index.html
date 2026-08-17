@@ -142,6 +142,33 @@
       </div>
     </div>
 
+    <div class="sheet" data-index="5" style="position:absolute;left:0;top:0;width:400px;height:540px;background:#fffdf8;box-shadow:0 1px 2px rgba(40,30,20,.14),0 14px 34px rgba(40,30,20,.16);cursor:grab;touch-action:none;will-change:transform;padding:34px 32px;box-sizing:border-box;display:flex;flex-direction:column;gap:10px">
+      <div style="display:flex;justify-content:space-between;align-items:baseline">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#7d7264">Contact</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;color:#b8632f">Get in touch</div>
+      </div>
+      <div style="font-family:'Instrument Serif',serif;font-size:30px;line-height:1.05">Say hello</div>
+      <div style="font-size:12.5px;line-height:1.55;color:#5c5347;text-wrap:pretty">Have a project in mind or just want to connect? Send a message below.</div>
+      <form id="contact-form" style="display:flex;flex-direction:column;gap:14px;margin-top:4px">
+        <label style="display:flex;flex-direction:column;gap:4px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9a8f7f">Name</span>
+          <input type="text" name="name" required style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#2a241d;background:transparent;border:none;border-bottom:1px solid rgba(42,36,29,.25);padding:4px 0;outline:none">
+        </label>
+        <label style="display:flex;flex-direction:column;gap:4px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9a8f7f">Email</span>
+          <input type="email" name="email" required style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#2a241d;background:transparent;border:none;border-bottom:1px solid rgba(42,36,29,.25);padding:4px 0;outline:none">
+        </label>
+        <label style="display:flex;flex-direction:column;gap:4px">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:#9a8f7f">Message</span>
+          <textarea name="message" rows="3" required style="font-family:'IBM Plex Sans',sans-serif;font-size:13px;color:#2a241d;background:transparent;border:none;border-bottom:1px solid rgba(42,36,29,.25);padding:4px 0;outline:none;resize:none"></textarea>
+        </label>
+        <button type="submit" style="align-self:flex-start;margin-top:6px;font-family:'IBM Plex Mono',monospace;font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;padding:10px 16px;background:#2a241d;color:#f3ede1;border:none;cursor:pointer">Send message</button>
+      </form>
+      <div style="margin-top:auto;display:flex;justify-content:right;font-family:'IBM Plex Mono',monospace;font-size:10px;color:#9a8f7f">
+        <span>Sheet 06</span>
+      </div>
+    </div>
+
     <div id="cover" style="position:absolute;left:0;top:0;width:440px;height:580px;transform-origin:left center;transform-style:preserve-3d;cursor:grab;touch-action:none;background:linear-gradient(155deg,#fbf9f4 0%,#efebe1 55%,#e4dfd3 100%);box-shadow:0 2px 4px rgba(40,30,20,.16),0 26px 50px rgba(40,30,20,.22);z-index:900">
       <div style="position:absolute;left:0;top:0;width:100%;height:100%;transform:rotateY(180deg) translateZ(1px);backface-visibility:hidden;background:linear-gradient(155deg,#efeade 0%,#e6e0d2 60%,#dcd5c6 100%);box-shadow:inset 0 0 0 1px rgba(120,105,85,.25),inset 12px 0 24px rgba(120,105,85,.18)"></div>
       <div style="position:absolute;left:0;top:0;width:12px;height:100%;background:linear-gradient(90deg,rgba(120,105,85,.22),rgba(120,105,85,0));backface-visibility:hidden"></div>
